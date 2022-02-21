@@ -72,10 +72,11 @@ Het woord javascript bvb levert 25 punten op.
 ![scrabbleAlert.png](images/scrabble_alertJavascript.png "Alert Javascript")
 
 ### De opgave
-1. Declareer in scrabble.js een variabele letterwaarden. Letterwaarden is een object  en bevat een property voor elke letter in het alfabet. De waarde van de property is het aantal punten voor deze letter.
-2. Declareer een functie berekenPunten die een woord als parameter doorkrijgt en de punten voor dit woord berekent en retourneert
-3. Declareer een functie init, die ervoor zal zorgen dat wanneer de gebruiker op de knop "Bereken punten" klikt de alert verschijnt. Maak gebruik van document.getElementById(“ … “) om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.  
-4. Roep de functie init aan als het venster geladen is.
+
+1. Declareer een functie berekenPunten die een woord als parameter doorkrijgt en de punten voor dit woord berekent en retourneert. Plaats deze functie is een aparte module berekenScore.js.
+   <br>**Tip**  gebruik een variabele letterwaarden. Letterwaarden is een object en bevat een property voor elke letter in het alfabet. De waarde van de property is het aantal punten voor deze letter.
+2. Declareer in scrabble.js een functie init, die een event handler instelt zodat als de gebruiker op de knop "Bereken punten" klikt de alert verschijnt. Maak gebruik van document.getElementById(" … ") om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.  
+   Roep de functie init aan als het venster geladen is.
 
 
 ## Oefening 4 - Craps
