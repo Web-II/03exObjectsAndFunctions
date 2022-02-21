@@ -1,7 +1,7 @@
 # Oefeningen Hoofdstuk 03 - Objects and Functions
 
 ## Oefening 1
-Volg de slides voor de theorie van hoofdstuk2. Na elke sectie wordt er verwezen naar het desbetreffende onderdeel van deze oefening.
+Volg de slides voor de theorie van hoofdstuk 3. Na elke sectie wordt er verwezen naar het desbetreffende onderdeel van deze oefening.
 
 ## Oefening 2 - Pet Rock
 ### Omschrijving van de pagina
