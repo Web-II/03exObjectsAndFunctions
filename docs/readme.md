@@ -30,21 +30,21 @@ In beide gevallen wordt na de alert het beeldje aangepast in rock_happy.png. Na 
 ### De opgave
 
 1. Bekijk index.html. Dit bevat een beeldje.
-2. Maak een javascript bestand iRock.js aan en verwijs naar dit script bestand in index.html
-3. Maak een object myPetRock. Het object heeft een property username (initieel lege string), een property image (initieel ‘images/rock.png’) en een methode resetImage die de property image instelt op de initiële waarde ‘images/rock.png’)
+2. Maak de javascript bestanden iRock.js en index.js aan en verwijs naar het index.js script bestand in index.html
+3. Maak in iRock.js een object myPetRock. Het object heeft een property username (initieel lege string), een property image (initieel ‘images/rock.png’) en een methode resetImage die de property image instelt op de initiële waarde ‘images/rock.png’)
 
-4. Schrijf een functie greetUser. De functie genereert een alert met de tekst ‘Hello I am your pet rock’.
+4. Schrijf een functie greetUser. De functie genereert een alert met de tekst ‘Hello I am your pet rock’. Deze functie hebben we nodig in index.js. Zorg voor de nodige export en import in de js bestanden.
 
-5. Schrijf een functie init. Voorlopig is het enige die gebeurt in deze functie een aanroep naar greetUser.
+5. Schrijf een functie init in index.js. Voorlopig is het enige dat gebeurt in deze functie een aanroep naar greetUser.
 
 6. Als het load event van het window object afgevuurd wordt dient de functie init te worden aangeroepen. Stel de event handler in, run de applicatie en ga na of je begroet wordt.
 
-7. Schrijf een functie touchRock.
+7. Schrijf een functie touchRock in iRock.js.
 
    - Indien de username van myPetRock de lege string is dan zal deze functie via een prompt de naam van de gebruiker opvragen en de property username van myPetRock aanpassen.
    - Indien de username van myPetRock reeds ingesteld is, wordt een alert "I like the attention, <myPetRock.username>. Thank you." gegeven.
 
-8. Pas de init functie aan zodat de functie touchRock als event handler wordt ingesteld voor het click event van het beeldje.
+8. Pas de greetUser functie aan zodat de functie touchRock als event handler wordt ingesteld voor het click event van het beeldje.
 
 9. Run de applicatie. Ga na of er gepast gereagreerd wordt als je klikt op de rock.
 
@@ -79,10 +79,11 @@ Het woord javascript bvb levert 25 punten op.
 
 ### De opgave
 
-1. Declareer een functie berekenPunten die een woord als parameter doorkrijgt en de punten voor dit woord berekent en retourneert. Plaats deze functie is een aparte module berekenPunten.js.
+1. Declareer een in scrabble.js een functie berekenPunten die een woord als parameter doorkrijgt en de punten voor dit woord berekent en retourneert.
    <br>**Tip** gebruik een variabele letterwaarden. Letterwaarden is een object en bevat een property voor elke letter in het alfabet. De waarde van de property is het aantal punten voor deze letter.
-2. Declareer in scrabble.js een functie init, die een event handler instelt zodat als de gebruiker op de knop "Bereken punten" klikt de alert verschijnt. Maak gebruik van document.getElementById(" … ") om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.  
-   Roep de functie init aan als het venster geladen is.
+2. Declareer in de module index.js een functie init, hier wordt de functie initialiseerScrabble opgeroepen.
+3. In initialiseerScrabble (in scrabble.js) stel je een event handler in zodat, als de gebruiker op de knop "Bereken punten" klikt, de alert verschijnt. Maak gebruik van document.getElementById(" … ") om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.
+4. Roep de functie init aan als het venster geladen is.
 
 ## Oefening 4 - Craps
 
@@ -111,9 +112,9 @@ Hieronder enkele voorbeelden van alerts na het rollen van de dobbelstenen :
 1. Vul craps.js aan. Daar we momenteel nog geen instanties van een klasse kunnen aanmaken, dienen we voor de dobbelstenen 2 objecten aan te maken dice1 en dice2. Beide objecten bevatten dezelfde property en dezelfde functie. dice1 en dice2 hebben beide
    - een property eyes, initieel de waarde 1
    - een methode roll : de dobbelsteen wordt gerold. De nieuwe waarde wordt bijgehouden in de property eyes.
-2. Maak een functie init. Zorg ervoor dat als je op play knop klikt, de 2 dobbelstenen gerold worden en de som van beide via een alert wordt weergegeven.
+2. Maak een functie init in index.js. Deze roept initialiseerCraps (uit craps.js) aan. In initialiseerCraps zorg jer ervoor dat als je op play knop klikt, de 2 dobbelstenen gerold worden en de som van beide via een alert wordt weergegeven.
 
-3. Voer de init functie uit als het event load van het window object afgevuurd wordt.
+3. Voer de init functie uit als het event load van het window object afgevuurd wordt. Zorg voor de juiste import en export in de verschillende js-bestanden.
 
 4. Maak een object craps met de properties
 
@@ -130,7 +131,7 @@ Hieronder enkele voorbeelden van alerts na het rollen van de dobbelstenen :
 
 6. Pas de eventhandler voor het click event van de knop play aan. Roep bovenstaande functies op voor het rollen van de dobbelstenen en het weergeven van de som ervan via een alert
 
-7. Pas de functie init in de module aan zodat de gebruiker bij aanvang gevraagd wordt om zijn inzet: _"What is your bet?"_. Pas de property bet van het craps object aan. Geef vervolgens een alert _"Press play to start the game."_
+7. Pas de functie initialiseerCraps aan zodat de gebruiker bij aanvang gevraagd wordt om zijn inzet: _"What is your bet?"_. Pas de property bet van het craps object aan. Geef vervolgens een alert _"Press play to start the game."_
 
 8. Voeg de methode play toe aan het object craps. Deze methode rolt de dobbelstenen en past de spelregels toe. Eventueel worden de properties points en/of gameover en earned aangepast.
 
