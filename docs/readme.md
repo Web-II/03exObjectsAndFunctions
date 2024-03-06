@@ -11,21 +11,21 @@ Volg de slides voor de theorie van hoofdstuk 3. Na elke sectie wordt er verwezen
 Pet rock is een beeldje dat reageert op handelingen van de gebruiker.
 Bij het laden van de pagina verschijnt een alert "Hello, I'm your pet rock".
 
-![petRockSaysHello.png](images/petRock_index.png "pet rock says hello")
+![petRockSaysHello.png](images/petRock_index.png 'pet rock says hello')
 
 Als de gebruiker voor de eerste keer op het beeldje klikt, wordt via een prompt de naam van de gebruiker opgevraagd.
 
-![petRockasksName.png](images/petRock_askName.png "pet rock asks yours name")
+![petRockasksName.png](images/petRock_askName.png 'pet rock asks yours name')
 
 Als de gebruiker zijn naam heeft ingegeven verschijnt een alert "It's good to meet you, _naam_gebruiker_".
 
-![petRocksaysHello.png](images/petRock_niceToMeet.png "pet rock says nice to meet")
+![petRocksaysHello.png](images/petRock_niceToMeet.png 'pet rock says nice to meet')
 
 Als er op Pet rock wordt geklikt wanneer de naam van de gebruiker reeds gekend is verschijnt een alert "I like the attention, _naam_gebruiker_. Thank you."
 
 In beide gevallen wordt na de alert het beeldje aangepast in rock_happy.png. Na 2 seconden wordt terug het beeldje rock.png getoond.
 
-![petRocksmiles.png](images/petRock_smile.png "pet rock smiles")
+![petRocksmiles.png](images/petRock_smile.png 'pet rock smiles')
 
 ### De opgave
 
@@ -73,9 +73,9 @@ a:1, b:3, c:5, d:1, e:1, f:4, g:3, h:4, i:1,j:4, k:3, l:3, m:3, n:1, o:1, p:3, q
 
 Het woord javascript bvb levert 25 punten op.
 
-![scrabbleExample.png](images/scrabble_vbJavascript.png "Voorbeeld Javascript")
+![scrabbleExample.png](images/scrabble_vbJavascript.png 'Voorbeeld Javascript')
 
-![scrabbleAlert.png](images/scrabble_alertJavascript.png "Alert Javascript")
+![scrabbleAlert.png](images/scrabble_alertJavascript.png 'Alert Javascript')
 
 ### De opgave
 
@@ -91,21 +91,21 @@ Het woord javascript bvb levert 25 punten op.
 
 Dit dobbelsteenspel wordt gespeeld met twee dobbelstenen. Het spel vraagt eerst hoeveel de gebruiker (shooter) wil inzetten.
 
-![crapsBet.png](images/craps_askBet.png "Ask bet")
+![crapsBet.png](images/craps_askBet.png 'Ask bet')
 
 De shooter geeft zijn inzet in. Vervolgens verschijnt de alert
 
-![crapsAlert1.png](images/craps_alert1.png "Alert 1")
+![crapsAlert1.png](images/craps_alert1.png 'Alert 1')
 
 De dobbelstenen worden gegooid. Is de uitkomst op de eerste worp 11 of 7, dan wordt zijn inzet 2 maal uitbetaald. Werpt de shooter iets anders, dan wordt dat zijn punt (point) en moet hij zorgen dat hij dit punt nogmaals gooit, voordat hij een 11 of een 7 gooit. Hij werpt net zolang, totdat hij zijn punt maakt of een 7 of 11 gooit. Gooit de shooter nogmaals zijn punt krijgt hij zijn inzet terug. Gooit hij terug een 7 of 11 dan verliest de shooter zijn inzet.
 
 Hieronder enkele voorbeelden van alerts na het rollen van de dobbelstenen :
 
-![crapsAlert2.png](images/craps_alert2.png "Alert 2")
+![crapsAlert2.png](images/craps_alert2.png 'Alert 2')
 
-![crapsAlert3.png](images/craps_alert3.png "Alert 3")
+![crapsAlert3.png](images/craps_alert3.png 'Alert 3')
 
-![crapsAlert4.png](images/craps_alert4.png "Alert 4")
+![crapsAlert4.png](images/craps_alert4.png 'Alert 4')
 
 ### De opgave
 
@@ -118,7 +118,7 @@ Hieronder enkele voorbeelden van alerts na het rollen van de dobbelstenen :
 
 4. Maak een object craps met de properties
 
-   - bet: de inzet
+   - bet: de inzet, initieel 0
    - point: ogen van de eerste worp, initieel 0
    - earned: het bedrag dat de shooter gewonnen heeft (initieel 0)
    - gameover: initieel false
