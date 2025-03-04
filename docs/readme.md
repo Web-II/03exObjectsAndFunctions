@@ -81,8 +81,8 @@ Het woord javascript bvb levert 25 punten op.
 
 1. Declareer in scrabble.js een functie berekenPunten die een woord als parameter doorkrijgt en de punten voor dit woord berekent en retourneert.
    <br>**Tip** gebruik een variabele letterwaarden. Letterwaarden is een object en bevat een property voor elke letter in het alfabet. De waarde van de property is het aantal punten voor deze letter.
-2. Declareer in de module index.js een functie init, hier wordt de functie initialiseerScrabble opgeroepen.
-3. In initialiseerScrabble (in scrabble.js) stel je een event handler in zodat, als de gebruiker op de knop "Bereken punten" klikt, de alert verschijnt. Maak gebruik van document.getElementById(" … ") om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.
+2. Maak functie initialiseerScrabble (in scrabble.js). Stel een event handler in zodat, als de gebruiker op de knop "Bereken punten" klikt, de alert verschijnt met de berekende waarde. Maak gebruik van document.getElementById(" … ") om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.
+3. Declareer in de module index.js een functie init, hier wordt de functie initialiseerScrabble opgeroepen.
 4. Roep de functie init aan als het venster geladen is.
 
 ## Oefening 4 - Craps
@@ -112,11 +112,11 @@ Hieronder enkele voorbeelden van alerts na het rollen van de dobbelstenen :
 1. Vul craps.js aan. Daar we momenteel nog geen instanties van een klasse kunnen aanmaken, dienen we voor de dobbelstenen 2 objecten aan te maken dice1 en dice2. Beide objecten bevatten dezelfde property en dezelfde functie. dice1 en dice2 hebben beide
    - een property eyes, initieel de waarde 1
    - een methode roll : de dobbelsteen wordt gerold. De nieuwe waarde wordt bijgehouden in de property eyes.
-2. Maak een functie init in index.js. Deze roept initialiseerCraps (uit craps.js) aan. In initialiseerCraps zorg jer ervoor dat als je op play knop klikt, de 2 dobbelstenen gerold worden en de som van beide via een alert wordt weergegeven.
+2. Maak een functie play in craps.js: rol de 2 dobbelstenen  en de som van beide wordt via een alert weergegeven. 
+3. Maak een functie initialiseerCraps in craps.js. Als je op play knop klikt, wordt de play methode uitgevoerd.
+4. Maak een functie init in index.js. Deze roept initialiseerCraps aan. Voer de init functie uit als het event load van het window object afgevuurd wordt. Zorg voor de juiste import en export in de verschillende js-bestanden.
 
-3. Voer de init functie uit als het event load van het window object afgevuurd wordt. Zorg voor de juiste import en export in de verschillende js-bestanden.
-
-4. Maak een object craps met de properties
+5. Maak een object craps met de properties
 
    - bet: de inzet, initieel 0
    - point: ogen van de eerste worp, initieel 0
@@ -124,18 +124,18 @@ Hieronder enkele voorbeelden van alerts na het rollen van de dobbelstenen :
    - gameover: initieel false
    - dices: een array met 2 dobbelstenen dice1 en dice2
 
-5. Voeg volgende methodes toe aan craps
+6. Voeg volgende methodes toe aan craps
 
    - rollDice: rol de 2 dobbelstenen
    - getSum: retourneert de som van de ogen van de 2 dobbelstenen
 
-6. Pas de eventhandler voor het click event van de knop play aan. Roep bovenstaande functies op voor het rollen van de dobbelstenen en het weergeven van de som ervan via een alert
+7. Pas de eventhandler voor het click event van de knop play aan. Roep bovenstaande functies op voor het rollen van de dobbelstenen en het weergeven van de som ervan via een alert
 
-7. Pas de functie initialiseerCraps aan zodat de gebruiker bij aanvang gevraagd wordt om zijn inzet: _"What is your bet?"_. Pas de property bet van het craps object aan. Geef vervolgens een alert _"Press play to start the game."_
+8. Pas de functie initialiseerCraps aan zodat de gebruiker bij aanvang gevraagd wordt om zijn inzet: _"What is your bet?"_. Pas de property bet van het craps object aan. Geef vervolgens een alert _"Press play to start the game."_. 
 
-8. Voeg de methode play toe aan het object craps. Deze methode rolt de dobbelstenen en past de spelregels toe. Eventueel worden de properties points en/of gameover en earned aangepast.
+9. Voeg een methode play toe aan het object craps. Deze methode rolt de dobbelstenen en past de spelregels toe. Eventueel worden de properties points en/of gameover en earned aangepast.
 
-9. Pas de eventhandler voor het click event van de knop play aan. Roep de methode play aan en geef een gepaste alert.
+9. Pas de functie play, de eventhandler voor het click event van de knop play, aan. Roep de methode play aan van het craps object en geef een gepaste alert.
    _"You played " + som van de dobbelstenen._
    Gevolgd door
    Als gameover: _You won ...._ of _You lost the game_
