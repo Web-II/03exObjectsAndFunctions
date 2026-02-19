@@ -84,3 +84,17 @@ Het woord javascript bvb levert 25 punten op.
 2. Maak functie initialiseerScrabble (in scrabble.js). Stel een event handler in zodat, als de gebruiker op de knop "Bereken punten" klikt, de alert verschijnt met de berekende waarde. Maak gebruik van document.getElementById(" … ") om de knop en het tekstvak te kunnen gebruiken in de JavaScript code.
 3. Declareer in de module index.js een functie init, hier wordt de functie initialiseerScrabble opgeroepen.
 4. Roep de functie init aan als het venster geladen is.
+
+## Oefening 4: Blad – steen – schaar
+
+Refactor de oplossing van oefening 1 uit hoofdstuk 2. Herschrijf de functie `geefResultaat` in `bss.js` zodat deze gebruik maakt van onderstaand object die de winregels specifieert.
+
+```js
+const wint = {
+  steen: 'schaar',
+  schaar: 'blad',
+  blad: 'steen',
+};
+```
+
+Zorg er ook voor dat het resultaat begint met een hoofdletter en dat aangegeven wordt welke speler gewonnen heeft. Bijvoorbeeld: "**B**lad wint - jij wint!" of "**S**teen wint - computer wint!".
