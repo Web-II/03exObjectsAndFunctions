@@ -45,7 +45,7 @@ In beide gevallen wordt na de alert het beeldje aangepast in rock_happy.png. Na 
 
 8. Pas de greetUser functie aan zodat de functie touchRock als event handler wordt ingesteld voor het click event van het beeldje.
 
-9. Run de applicatie. Ga na of er gepast gereagreerd wordt als je klikt op de rock.
+9. Run de applicatie. Ga na of er gepast gereageerd wordt als je klikt op de rock.
 
 10. Schrijf een functie showRock. De functie stelt het src attribuut van het beeldje in op de image property van myPetRock.
 
@@ -59,6 +59,8 @@ In beide gevallen wordt na de alert het beeldje aangepast in rock_happy.png. Na 
     - Maak gebruik van de javascript functie setTimeOut om na twee seconden de functie showRock terug aan te roepen. De functie setTimeout bevat 2 parameters: de naam van de functie die moet worden uitgevoerd na afloop van de timer, en de timertijd in ms. setTimeout(showRock, 2 \* 1000);
 
 12. Run de applicatie en bekijk het resultaat
+
+Extra: geef ook weer hoe vaak er al op de rock geklikt is. Pas de boodschap "I like the attention, <myPetRock.username>. Thank you." aan en geef dan ook "You already clicked on me <aantal_keer_geklikt> times." weer.
 
 ## Oefening 3 - Scrabble
 
