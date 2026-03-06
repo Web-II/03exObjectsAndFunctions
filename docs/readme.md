@@ -100,3 +100,19 @@ const wint = {
 ```
 
 Zorg er ook voor dat het resultaat begint met een hoofdletter en dat aangegeven wordt welke speler gewonnen heeft. Bijvoorbeeld: "**B**lad wint - jij wint!" of "**S**teen wint - computer wint!".
+
+Maak een arrow functie `kapitaliseer` die een string als parameter neemt en deze string teruggeeft met de eerste letter in hoofdletter en de rest in kleine letters. Gebruik deze functie in `geefResultaat` om de naam van de winnende keuze te kapitaliseren.
+
+Pas ook de berekening van de `keuzeComputer` aan zodat deze eveneens gebruik maakt van het `wint` object. Tip: `Object.keys(wint)` geeft een array terug met de keys van het object wint. Je kan deze array gebruiken om een willekeurige keuze te maken voor de computer.
+
+## Oefening 5: Blad – steen – schaar
+
+Refactor de vorige oplossing. I.p.v. te prompten naar de keuze van de gebruiker, dient de gebruiker te klikken op 1 van de 3 knoppen "blad", "steen", "schaar".
+![bss-1.png](images/bss-1.png 'blad-steen-schaar knoppen')
+
+Na de keuze wordt het resultaat weergegeven op de pagina.
+![bss-2.png](images/bss-2.png 'blad-steen-schaar ')
+
+1. Bekijk de html pagina
+2. Refactor de code in bss.js: maak een functie `initialiseerBladSteenSchaar`. Stel een event handler in zodat, als de gebruiker op 1 van de knoppen klikt, de keuze van de computer bepaald wordt en het resultaat wordt weergegeven in de html pagina. Schrap de code die hierdoor overbodig wordt. Maak gebruik van de property `textContent` van de div-elementen om het resultaat weer te geven in de pagina, en om de tekst binnen de geselecteerde knop te lezen (deze tekst geeft de keuze van de gebruiker weer).
+3. Declareer in de module index.js een functie `init`, hier wordt de functie `initialiseerBladSteenSchaar` opgeroepen. Roep de functie `init` aan als het venster geladen is.
