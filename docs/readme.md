@@ -69,7 +69,7 @@ Extra: geef ook weer hoe vaak er al op de rock geklikt is. Pas de boodschap "I l
 De webpagina bevat een tekstveld en een knop Bereken waarde. Bij het klikken op de knop wordt de punten voor dit woord berekend en geretourneerd in een alert.
 
 De waarden van de letters zijn als volgt :
-a:1, b:3, c:5, d:1, e:1, f:4, g:3, h:4, i:1,j:4, k:3, l:3, m:3, n:1, o:1, p:3, q:10, r:2, s:2, t:2, u:4, v:4, w:5,x:8, y:8, z:4
+a:1, b:3, c:5, d:2, e:1, f:4, g:3, h:4, i:1,j:4, k:3, l:3, m:3, n:1, o:1, p:3, q:10, r:2, s:2, t:2, u:4, v:4, w:5,x:8, y:8, z:4
 
 Het woord javascript bvb levert 25 punten op.
 
